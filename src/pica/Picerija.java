@@ -49,13 +49,31 @@ public class Picerija {
 		Pica[] picasMasivs=null;
 		String izvele;
 		JFrame fr = new JFrame();
+		do {
 			izvele = JOptionPane.showInputDialog("1-Uztaisit pasutijumu  | 2-Paskatities pasutijumu | stop");
 			izvele = izvele.toLowerCase();
 			switch(izvele) {
+			case "1":
+				try {
+					int Picas=Integer.parseInt(JOptionPane.showInputDialog(" Cik picas velies pasutit? "));
+					picasMasivs= new Pica[Picas];
+					picasMasivs= izveidotPicu(picasMasivs);
+				break;
+				}catch(Exception e) {
+					JOptionPane.showMessageDialog(fr, "Darbiba nepastav!", "Klume", JOptionPane.ERROR_MESSAGE);
+				}
+			case "2":
+				for(int i=0; i<picasMasivs.length; i++) {
+					picasMasivs[i].izvadit();
+				}
+				break;
+			case "stop":
+			JOptionPane.showMessageDialog(fr, "Programma aptureta!", "Bridinajums", JOptionPane.WARNING_MESSAGE);
+			break;
+			default:
+			JOptionPane.showMessageDialog(fr, "Darbiba nepastav!", "Klume", JOptionPane.ERROR_MESSAGE);
 			}
-		
-	
-
+		}while(!izvele.equals("stop"));
 	}
 
 }
