@@ -1,5 +1,6 @@
 package pica;
 
+import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
 public class Picerija {
@@ -22,7 +23,15 @@ public class Picerija {
 	}
 
 	public static void main(String[] args) {
+		Pica[] picasMasivs=null;
+		String izvele;
+		JFrame fr = new JFrame();
+			izvele = JOptionPane.showInputDialog("1-Uztaisit pasutijumu  | 2-Paskatities pasutijumu | stop");
+			izvele = izvele.toLowerCase();
+			switch(izvele) {
+			}
 		
+	
 
 	}
 
