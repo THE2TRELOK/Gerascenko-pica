@@ -7,7 +7,7 @@ public class Picerija {
 	static  Pica[] izveidotPicu( Pica[]masivs) {
 		double cena1=0;
 		int izmers=0;
-		String piedavas,dzeriens;
+		String piedavas,dzeriens,fri;
 			for(int i=0;i<masivs.length;i++) {
 			    do {
 			    	izmers = Integer.parseInt(JOptionPane.showInputDialog("Izvelies picas izmeru,20,30,40)"));
@@ -40,7 +40,14 @@ public class Picerija {
 			    do {
 				dzeriens = JOptionPane.showInputDialog("Izvelejaties dzerienu: cola , fanta, sprite");
 			    }while(!dzeriens.equals("cola")&!dzeriens.equals("fanta")&!dzeriens.equals("sprite"));
-				masivs[i]= new Pica(izmers,piedavas,dzeriens,cena1);
+			    do {
+			    fri = JOptionPane.showInputDialog("Vai jus gribesiet kartupelus fri? ja|ne");
+			    fri = fri.toLowerCase();
+			    if(fri.equals("ja")){
+			    	cena1=cena1+1;
+			    }
+			    }while(!fri.equals("ja")&!fri.equals("ne"));
+				masivs[i]= new Pica(izmers,piedavas,dzeriens,cena1,fri);
 			}
 			return masivs;
 	}
