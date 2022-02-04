@@ -1,5 +1,9 @@
 # Gerascenko-pica :pizza:
 ### **Daramo darbu saraksts**
+- [x] Izveidot pica klase
+- [x] Izveidot main dalu 
+- [x] Izveidot metodi izveidotpicu
+- [x] Pievienot picas veidus
 - [x] Uztaisit jauno funkcionalitati
 - [x] ievietot atbilstošus attēlus
 - [x] Veikt izstrādātās picērijas programmas izgrūšanu
