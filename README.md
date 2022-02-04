@@ -1,7 +1,10 @@
 # Gerascenko-pica :pizza:
+### **Daramo darbu saraksts**
 - [ ] Uztaisit jauno funkcionalitati
 - [ ] ievietot atbilstošus attēlus
 - [ ] Veikt izstrādātās picērijas programmas izgrūšanu
+
+### **Par programmu**
 Picas pasutišanas programma kuraja jus varat: izveleties picas izmeru, izveleties picas veidu,izveleties dzerienu un izveleties kartupelus fri.
 Pec datu ievadisanas jums izdrukas jusu pasutijumu un cenu par pasutijumu
 
